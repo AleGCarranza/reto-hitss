@@ -1,4 +1,4 @@
-export default function ProgressDots({ total, currentStep }) {
+export default function Progress({ total, currentStep }) {
   const dots = [];
 
   for (let i = 0; i < total; i++) {

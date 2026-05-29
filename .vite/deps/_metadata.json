@@ -1,31 +1,41 @@
 {
-  "hash": "47c92429",
+  "hash": "8c5b0773",
   "configHash": "d3cfa0f6",
-  "lockfileHash": "67470e44",
-  "browserHash": "5555cf94",
+  "lockfileHash": "faf22162",
+  "browserHash": "160fa653",
   "optimized": {
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "dd7551cf",
+      "fileHash": "4ced1d17",
       "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "7fcf29e7",
+      "needsInterop": false
     },
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "ff821667",
+      "fileHash": "1a9f3454",
       "needsInterop": true
     },
     "react/jsx-dev-runtime": {
       "src": "../../node_modules/react/jsx-dev-runtime.js",
       "file": "react_jsx-dev-runtime.js",
-      "fileHash": "ccc99ece",
+      "fileHash": "3eb0683b",
       "needsInterop": true
     }
   },
   "chunks": {
-    "react-DI8Hxiyg": {
-      "file": "react-DI8Hxiyg.js",
+    "react-CoTh1R2n": {
+      "file": "react-CoTh1R2n.js",
+      "isDynamicEntry": false
+    },
+    "react-dom-DWSBsIl4": {
+      "file": "react-dom-DWSBsIl4.js",
       "isDynamicEntry": false
     }
   }

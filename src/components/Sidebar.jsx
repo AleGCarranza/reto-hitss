@@ -1,4 +1,4 @@
-import ProgressDots from "./Progress";
+import Progress from "./Progress";
 
 export default function Sidebar({ step, currentStep, totalSteps }) {
   return (
@@ -12,7 +12,7 @@ export default function Sidebar({ step, currentStep, totalSteps }) {
         <p className="text-summary text-text-light mt-2">{step.instructions}</p>
       </div>
 
-      <ProgressDots total={totalSteps} currentStep={currentStep} />
+      <Progress total={totalSteps} currentStep={currentStep} />
     </>
   );
 }
