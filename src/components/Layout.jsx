@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { stepsData } from "../data/steps";
 import Sidebar from "./Sidebar";
 import CardOption from "./CardOption";
+import StepOne from "./steps/StepOne";
+import StepTwo from "./steps/StepTwo";
 
 export default function Layout() {
   const [currentStep, setCurrentStep] = useState(0);
@@ -21,9 +23,9 @@ export default function Layout() {
           />
         </div>
         <div className="flex flex-col gap-6 lg:col-span-7 bg-secondary rounded-b-2xl lg:rounded-r-2xl lg:rounded-bl-none p-8">
-          <CardOption name="opción 1" value="1" checked={true}/>
-          <CardOption name="opción 2" value="2"checked={false}/>
-          <CardOption name="opción 3" value="3"checked={false}/>
+          {/* <StepOne/>
+           */}
+           <StepTwo/>
         </div>
       </div>
 
