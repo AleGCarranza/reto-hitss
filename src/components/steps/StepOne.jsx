@@ -1,10 +1,10 @@
 import CardOption from "../CardOption";
-export default function StepOne() {
+export default function StepOne({title, description}) {
   return (
     <div className="flex flex-col gap-6">
-      <CardOption name="opción 1" value="1" checked={true} />
-      <CardOption name="opción 2" value="2" checked={false} />
-      <CardOption name="opción 3" value="3" checked={false} />
+      <CardOption name="plan" value="1" checked={true} title={title} description={description} />
+      <CardOption name="plan" value="2" checked={false} title={title} description={description} />
+      <CardOption name="plan" value="3" checked={false} title={title} description={description} />
     </div>
   );
 }
