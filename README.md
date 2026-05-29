@@ -27,3 +27,8 @@ src/
   data/           → Datos estáticos
   pages/          → Vistas (Success)
   styles/         → Estilos globales
+
+  ```
+
+ ## Link a figma
+ https://www.figma.com/design/xAtbfZO07fxY6vDWaZ8H9s/Untitled?node-id=0-1&m=dev&t=AaCDnC4TVwuRviZB-1
