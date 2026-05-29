@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { stepsData } from "../data/steps";
 import Sidebar from "./Sidebar";
 
 export default function Layout() {
   const [currentStep, setCurrentStep] = useState(0);
+  const navigate = useNavigate();
 
   const step = stepsData[currentStep];
 
@@ -27,7 +29,7 @@ export default function Layout() {
           {currentStep > 0 ? (
             <button
               onClick={() => setCurrentStep((s) => s - 1)}
-              className="px-4 py-2 rounded-lg bg-actions-primary text-text-light"
+              className="px-4 py-2 rounded-full bg-actions-primary text-text-light"
             >
               Regresar
             </button>
@@ -37,11 +39,12 @@ export default function Layout() {
           <button
             onClick={() => {
               if (currentStep === stepsData.length - 1) {
+                navigate("/success");
               } else {
                 setCurrentStep((s) => s + 1);
               }
             }}
-            className="px-4 py-2 rounded-lg bg-actions-secondary text-text-light"
+            className="px-4 py-2 rounded-full bg-actions-secondary text-text-light"
           >
             {currentStep === stepsData.length - 1 ? "Finalizar" : "Siguiente"}
           </button>
